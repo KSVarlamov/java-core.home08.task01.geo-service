@@ -1,3 +1,5 @@
+package ru.netology.sender;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -13,7 +15,7 @@ import ru.netology.sender.MessageSenderImpl;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestMessageService {
+public class MessageServiceTest {
     private final Location RU_LOCATION = new Location("Moscow", Country.RUSSIA, "def street", 1);
     private final Location USA_LOCATION = new Location("New York", Country.USA, "def street", 1);
 
