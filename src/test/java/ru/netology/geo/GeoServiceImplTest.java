@@ -10,7 +10,7 @@ public class GeoServiceImplTest {
     public static final String MOSCOW_IP = "172.0.32.11";
     public static final String NEW_YORK_IP = "96.44.183.149";
 
-    private static GeoService geoService = new GeoServiceImpl();
+    private static final GeoService geoService = new GeoServiceImpl();
 
     @Test
     public void TestMoscowIP() {
@@ -28,7 +28,7 @@ public class GeoServiceImplTest {
 
     @Test
     public void TestSomeUSAIP() {
-        Location usa =  geoService.byIp("96.22.200.10");
+        Location usa = geoService.byIp("96.22.200.10");
         assertEquals(usa.getCountry(), Country.USA);
         assertEquals(usa.getCity(), "New York");
     }
